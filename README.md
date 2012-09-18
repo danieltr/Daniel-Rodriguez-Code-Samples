@@ -1,0 +1,1 @@
+These files are examples of code from projects that I have worked on at Freeverse.
