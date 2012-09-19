@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CUTSCENE id="stage04_scene01">
+
+	<COMMAND time="0.0"	type="spriteFrame" actor="darcy"  frame="stand" />
+	<COMMAND time="0.0"		type="playMusic" music="Music/dance-of-the-butterfly-complete.mp3" />
+	
+   	<COMMAND time="0.0"	type="absoluteMoveTo" actor="elizabeth" destination="-820, 280, 0" duration="0.0" />
+	<COMMAND time="0.0"	type="cameraCut" actor="elizabeth" />
+   	<COMMAND time="0.0"		type="fadeIn" duration="1.0" />
+<!--#action 
+FULLSCREEN narrative
+-->
+	<COMMAND time="2.0"		type="narration" portrait="none" dialog="No sooner had Elizabeth related Mr. Wickham's story to Jane than the Bingleys showed up at Longbourn to invite the Bennets to another ball."/>
+	<COMMAND time="2.0"		type="narration" portrait="none" dialog="Elizabeth thought with pleasure of dancing a great deal with Mr. Wickham and of seeing a confirmation in everything negative in Mr. Darcy's look and behavior."/>
+
+<!--#action
+[INT Netherfield Ballroom. Elizabeth, Charlotte, Darcy, Collins, Jane, random folks, are present. Elizabeth and Darcy are close together.]
+ 
+[portrait of Elizabeth despair]
+NARRATIVE BOX
+-->
+
+	<COMMAND time="2.0"		type="narration" portrait="portraits/elizabeth_despair.png" dialog="To her disappointment, Wickham had been obliged to go to town on business, and she was coerced into dancing the first two songs with Mr. Collins."/>
+    
+    <COMMAND time="2.0"	 type="narration" portrait="portraits/mrCollins_normal.png" dialog="He was awkward and uncommonly round and gave her all the shame and misery that a disagreeable dancing partner can give."/> 
+
+    <COMMAND time="2.0"	 type="narration" portrait="portraits/elizabeth_normal.png" dialog="She returned to Charlotte Lucas when she found herself suddenly addressed by Mr. Darcy."/>
+    <COMMAND time="2.0"	 type="narration" portrait="portraits/darcy_normal.png" dialog="He took her so much by surprise in his asking her to dance that, without knowing what she did, she accepted him."/>
+
+
+	<COMMAND time="2.0"		type="dialog" portrait="portraits/elizabeth_indifferent.png" dialog="&quot;It is your turn to say something now, Mr. Darcy. I talked about the dance, and you ought to make some sort of remark on the size of the room or the number of couples.&quot;"/>
+	<COMMAND time="2.0"		type="dialog" portrait="portraits/elizabeth_indifferent.png" dialog="&quot;Perhaps by and by I may observe that private balls are much pleasanter than public ones.&quot;"/>
+
+	<COMMAND time="2.0"	type="cameraFocus" actor="darcy" />    
+
+	<COMMAND time="2.0"		type="dialog" portrait="portraits/darcy_happy.png" dialog="&quot;On the contrary, I find that balls are much more enjoyable when they cease to remain private.&quot;"/>
+
+	<COMMAND time="2.0"	type="cameraFocus" actor="elizabeth" />
+
+	<COMMAND time="2.0"		type="dialog" portrait="portraits/elizabeth_normal.png" dialog="&quot;During our visit to Meryton the other day, we had just been forming a new acquaintance, Mr. Wickham.&quot;"/>
+
+	<COMMAND time="2.0"	type="cameraFocus" actor="darcy" />    
+
+	<COMMAND time="2.0"		type="dialog" portrait="portraits/darcy_angry.png" dialog="&quot;Mr. Wickham is blessed with such happy manners as may ensure his making friends-whether he may be equally capable of keeping them is less certain.&quot;"/>
+
+	<COMMAND time="2.0"	type="cameraFocus" actor="elizabeth" />
+
+	<COMMAND time="2.0"		type="dialog" portrait="portraits/elizabeth_angry.png" dialog="&quot;He has been so unlucky as to lose your friendship and his ability to walk for a twelvemonth because of your temper, I understand.&quot;"/>
+
+<!--#action 
+[PAN RIGHT to show Bingley standing]
+-->
+
+	<COMMAND time="2.0"		type="playMusic" music="Music/monsters-complete.mp3" />
+	<COMMAND time="2.0"		type="playSound" sound="screams.wav" />
+	
+   	<COMMAND time="2.0"		type="absoluteMoveTo" actor="bingley" destination="-620, 300, 0" duration="4.0" />
+	<COMMAND time="2.0"		type="die" actor="chump01" />
+	<COMMAND time="2.0"		type="die" actor="chump02" />
+	<COMMAND time="2.0"		type="die" actor="chump03" />
+	<COMMAND time="2.0"		type="die" actor="chump04" />
+	<COMMAND time="2.0"		type="die" actor="chump05" />
+	<COMMAND time="2.0"		type="spriteFlip" actor="bingley"  />
+	<COMMAND time="2.0"		type="spriteAnim" actor="bingley" anim="bing_run" />
+	<COMMAND time="2.0"		type="cameraFocus" actor="bingley" />
+	
+	<COMMAND time="6.2"		type="spriteFlip" actor="bingley"  />
+	<COMMAND time="6.2"		type="spriteFrame" actor="bingley" frame="bing_scared" />
+
+	<COMMAND time="6.5"		type="dialog" portrait="portraits/bingley_scared.png" dialog="&quot;I beg your pardon to interrupt, Ms. Elizabeth. Mr. Darcy, if I may have the pleasure of your company in the kitchen...&quot;"/>
+    
+	<COMMAND time="6.5"		type="cameraFocus" actor="elizabeth" />   
+   	<COMMAND time="6.5"		type="absoluteMoveTo" actor="darcy" destination="-93, 280, 0" duration="3.9" />
+	<COMMAND time="6.5"		type="spriteFlip" actor="darcy" />
+	<COMMAND time="6.5"		type="spriteAnim" actor="darcy" anim="walk" />
+   	<COMMAND time="6.75"	type="absoluteMoveTo" actor="elizabeth" destination="-170, 280, 0" duration="3.65" />
+	<COMMAND time="6.75"	type="spriteSheet" actor="elizabeth" sheet="lizzie1.pvr" /> 
+	<COMMAND time="6.75"	type="spriteAnim" actor="elizabeth" anim="walk" /> 
+
+	<COMMAND time="9.5"		type="dialog" portrait="portraits/darcy_normal.png" dialog="&quot;Miss Elizabeth, I would much prefer you not to accompany us. I am quite capable of attending to Mr. Bingley myself.&quot;"/>    
+	<COMMAND time="9.5"		type="dialog" portrait="portraits/elizabeth_normal.png" dialog="&quot;Of that I have no doubt, Mr. Darcy. Just as I have no doubt in my ability to form my own opinion on the matter. Now, do you wish to cause a stir, or shall we to the kitchen?&quot;"/>
+    	
+	<COMMAND time="9.5"	type="fadeOut" duration="1.0" />	
+   	<COMMAND time="10.5"		type="absoluteMoveTo" actor="elizabeth" destination="240, 280, 0" duration="0.0" />
+   	<COMMAND time="10.5"		type="absoluteMoveTo" actor="darcy" destination="3100, 280, 0" duration="0.0" />
+	<COMMAND time="10.5"	type="spriteFrame" actor="darcy" frame="stand" /> 
+	<COMMAND time="10.5"	type="cameraCut" actor="elizabeth" />
+	<COMMAND time="10.5"		type="spriteSheet" actor="elizabeth" sheet="lizzie1.pvr" />
+	<COMMAND time="10.5"	type="spriteFrame" actor="elizabeth" frame="stand" /> 
+   	<COMMAND time="10.5"		type="fadeIn" duration="1.0" />    
+
+<!--#action 
+[Elizabeth and Darcy walk right.]
+[STAGE 4 ACTION]
+[Darcy fights alongside Elizabeth through brief first wave. End of first wave, Darcy moves ahead and offscreen. Elizabeth moves to follow, interrupted by next wave breaking through the wall.]
+
+[ACTION continues to Kitchen. Dead humans present.]
+
+[PAUSE] 
+
+[PAN RIGHT to show boss]
+
+[BOSS BATTLE: “Long Tom Onion” (fat zombie chef)] 
+-->
+
+	<COMMAND time="11.5"	type="end" />
+
+</CUTSCENE>
+
+
+
+
